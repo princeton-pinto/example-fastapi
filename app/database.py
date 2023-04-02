@@ -6,7 +6,7 @@ from .config import settings
 
 # SQL_ALCHEMY_DATABASE_URL = 'postgresql://<username>:<password>@<ip-addess/hostname:portnumber>/<database_name>'
 
-# SQL_ALCHEMY_DATABASE_URL = 'postgresql://postgres:mojaveenchiclown@localhost:5432/fastapi'
+# SQL_ALCHEMY_DATABASE_URL = 'postgresql://postgres:xxxxxx@localhost:5432/fastapi'
 
 SQL_ALCHEMY_DATABASE_URL = f'postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}'
 
@@ -32,7 +32,7 @@ def get_db():
 
 # while True:
 #     try:
-#         conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres', password='mojaveenchiclown', cursor_factory=RealDictCursor)
+#         conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres', password='xxxxxx', cursor_factory=RealDictCursor)
 #         cursor = conn.cursor()
 #         print('Database connection was SUCCESSFUL')
 #         break
